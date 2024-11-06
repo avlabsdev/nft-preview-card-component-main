@@ -1,0 +1,149 @@
+:root {
+  font-size: 18px;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 2rem);
+  padding: 1rem;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: hsl(217, 54%, 11%);
+}
+
+main {
+  max-width: 325px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: hsl(216, 50%, 16%);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.view-icon {
+  display: none;
+}
+
+.eq-img {
+  border-radius: .5rem;
+}
+
+.img-link:hover .view-icon {
+  display: flex;
+  position: absolute;
+}
+
+.img-link:hover .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(178, 100%, 50%, .5);
+  border-radius: .5rem;
+}
+
+.img-link {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+h1, h1 a {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: .25rem;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+p {
+  color: hsl(215, 30%, 70%);
+  font-weight: 300;
+  line-height: 1.25rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -.25rem;
+  margin-top: .25rem;
+}
+
+.eth, .time {
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.eth {
+  color: hsl(178, 100%, 50%);
+}
+
+.time {
+  color: hsl(215, 30%, 70%);
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid hsl(215, 25%, 25%);
+}
+
+.credit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: .9rem;
+  margin-top: -.65rem;
+  margin-bottom: .65rem;
+}
+
+.credit p {
+  font-size: .9rem;
+  font-weight: 300;
+}
+
+.credit p a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+.credit p a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.avatar-img {
+  width: 32px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+
+footer {
+  text-align: center;
+  line-height: 1.5rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
+  font-size: .9rem;
+}
+
+footer a {
+  font-weight: 600;
+  color: hsl(215, 51%, 70%);
+}
